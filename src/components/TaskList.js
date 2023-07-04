@@ -72,7 +72,7 @@ const TaskList = () => {
 
   useEffect(() => {
     const cTask = tasks.filter((task) => {
-      return task.completed == true
+      return task.completed === true
     })
     setCompletedTask(cTask)
   }, [tasks])
